@@ -1,3 +1,7 @@
+# Website Link
+
+https://glarsen1.github.io/irs-site/
+
 # Simple IRS Guide
 
 This project was developed as part of the E-Fólio A assignment for the course *Laboratório de Sistemas e Serviços Web* (UAB - Uiversidade Aberta).
@@ -66,11 +70,17 @@ MDN Web Docs - https://developer.mozilla.org/
 irs-site/
 │
 ├── index.html
+    o-que-e-o-irs.hmtl
+    como-preencher.html
+    deducoes.html
+    prazos.html
+    simulador.html
+    about.html
+    README.md
 ├── css/ 
-├── html/
 ├── images/
-├── js/
-└── README.md
+└──  js/
+
 
 
 ---
