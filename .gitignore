@@ -1,0 +1,39 @@
+# =========================
+# SISTEMA OPERATIVO
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITORES / IDEs
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# DOCUMENTOS (NÃO FAZEM PARTE DO SITE)
+# =========================
+*.docx
+*.pdf
+*.doc
+*.txt
+
+# =========================
+# FICHEIROS TEMPORÁRIOS
+# =========================
+*.log
+*.tmp
+
+# =========================
+# PASTAS DE TESTES OU RASCUNHOS (se existirem)
+# =========================
+testes/
+rascunhos/
+debug/
+docs/
+
+# =========================
+# IMAGENS NÃO UTILIZADAS (opcional)
+# =========================
+images/teste/
+images/backup/

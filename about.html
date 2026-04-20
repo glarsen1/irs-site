@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Guia Simples de IRS</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <h1 data-pt="Guia Simples de IRS" data-en="Simple IRS Guide">
+                Guia Simples de IRS
+            </h1>
+        </div>
+
+        <div class="top-buttons">
+            <button onclick="toggleLanguage()">PT/EN</button>
+            <button onclick="toggleTheme()">Dia/Noite</button>   
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+        <a href="o-que-e-o-irs.html" data-pt="O que é o IRS" data-en="What is IRS">O que é o IRS</a>
+        <a href="como-preencher.html" data-pt="Como Preencher" data-en="How to Fill">Como Preencher</a>
+        <a href="deducoes.html" data-pt="Deduções" data-en="Deductions">Deduções</a>
+        <a href="prazos.html" data-pt="Prazos" data-en="Deadlines">Prazos</a>
+        <a href="simulador.html" data-pt="Simulador" data-en="Calculator">Simulador</a>
+        <a href="about.html" data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2 data-pt="Relatório do Projeto" data-en="Project Report">
+                Relatório do Projeto
+            </h2>
+        </section>
+
+       
+        <section>
+             <p data-pt="Este website foi desenvolvido com o objetivo de simular de forma básica o funcionamento do IRS em Portugal, no âmbito do E-Fólio A da disciplina de Laboratório de Sistemas e Serviços Web da UAB (Universidade Aberta). Destina-se a demonstrar os conhecimentos adquiridos até à data em HTML, CSS e JavaScript, e como tal não tenho, de todo, a pretensão de o ter como ferramenta fiável de cálculo do IRS."
+               data-en="This website was developed with the aim of simulating, in a basic way, the functioning of the IRS (Income Tax) in Portugal, within the scope of E-folio A of the UAB (Universidade Aberta) Web Systems and Services Laboratory course. It is intended to demonstrate the knowledge acquired so far in HTML, CSS, and JavaScript, and as such, I do not, in any way, claim it to be a reliable tool for calculating IRS.">
+            </p>
+       
+            <p data-pt="Organizei a estrutura do site em várias páginas interligadas, incluindo uma página (index.html) na raiz do programa que encaminha para a home page, também ela num ficheiro (index.html), que por questões de organização se encontra colocada, assim como os demais ficheiros HTML (o-que-e-o-irs.html, como-preencher.html, entre outros), numa pasta própria para ficheiros com essa extensão. Desenvolvi o código no VSCode e adotei uma separação clara entre conteúdo, apresentação e comportamento. O HTML foi utilizado para estruturar a informação, o CSS para definir o aspeto visual e o JavaScript para implementar funcionalidades dinâmicas. Esta abordagem permite uma melhor organização do código, maior facilidade de manutenção e reutilização de componentes."
+               data-en="I organized the site's structure into several interconnected pages, including a page (index.html) in the program's root directory that links to the homepage, also in an (index.html) file. For organizational purposes, this file, along with the other HTML files (what-is-irs.html, how-to-fill-out.html, among others), is located in a folder specifically for files with that extension. I developed the code in VSCode and adopted a clear separation between content, presentation, and behavior. HTML was used to structure the information, CSS to define the visual appearance, and JavaScript to implement dynamic functionalities. This approach allows for better code organization, easier maintenance, and component reuse.">
+            </p>
+
+            <p data-pt="Do ponto de vista do utilizador, o site permite uma navegação intuitiva e uma divisão clara dos conteúdos por temas, facilitando a sua experiência. Dei especial atenção à consistência da interface, nomeadamente através de um menu comum a todas as páginas e de um layout uniforme, de forma a evitar confusão e melhorar a usabilidade. Adicionalmente, tive em consideração princípios básicos de acessibilidade, como a utilização de cores com contraste adequado e textos claros, de modo a tornar a navegação mais inclusiva."
+               data-en="From the user's point of view, the site allows for intuitive navigation and a clear division of content by topic, facilitating their experience. I paid special attention to the consistency of the interface, namely through a menu common to all pages and a uniform layout, in order to avoid confusion and improve usability. Additionally, I took into account basic accessibility principles, such as the use of colors with adequate contrast and clear text, in order to make navigation more inclusive.">
+            </p>
+
+            <p data-pt="Entre as funcionalidades dinâmicas implementadas destaco a possibilidade de alternar entre idioma (português e inglês), o modo claro/escuro com persistência através de localStorage, e um simulador de IRS. Este simulador inclui, de forma simplificada, o cálculo do imposto com base em escalões progressivos, bem como a aplicação de deduções com limites máximos e a consideração de dependentes, permitindo assim uma estimativa do valor final a pagar. A lógica utilizada no simulador procurou aproximar-se de um modelo real, embora simplificado, exigindo a implementação de condições encadeadas e validação de dados introduzidos pelo utilizador."
+               data-en="Among the dynamic features implemented, I highlight the ability to switch between languages ​​(Portuguese and English), the light/dark mode with persistence via localStorage, and an income tax simulator. This simulator includes, in a simplified way, the calculation of tax based on progressive brackets, as well as the application of deductions with maximum limits and the consideration of dependents, thus allowing an estimate of the final amount to be paid. The logic used in the simulator sought to approximate a real model, but simplified, requiring the implementation of chained conditions and validation of data entered by the user.">
+            </p>
+
+            <p data-pt="Implementei ainda outras funcionalidades, além das 3 obrigatórias para poder praticar, como a validação de NIF, um contador de visitas local e a interação com imagens (zoom). O design foi pensado para ser simples, responsivo e consistente, garantindo uma boa utilização em diferentes dispositivos, nomeadamente através da utilização de layouts flexíveis e media queries em CSS."
+               data-en="I also implemented other features for practice, such as CPF validation, a local visitor counter, and image interaction (zoom). The design was conceived to be simple, responsive, and consistent, ensuring good usability across different devices, notably through the use of flexible layouts and CSS media queries.">
+            </p>
+
+            <p data-pt="Durante o desenvolvimento, surgiram alguns desafios, nomeadamente na gestão do estado entre páginas, como foi o caso da persistência do tema e do idioma escolhidos pelo utilizador. Esta dificuldade foi ultrapassada através da utilização de localStorage, permitindo guardar preferências e aplicá-las automaticamente ao carregar cada página. Outro desafio relevante foi a implementação do simulador, em particular na definição de escalões de IRS e na aplicação correta de deduções com limites, exigindo uma abordagem lógica estruturada em JavaScript."
+               data-en="During development, some challenges arose, particularly in managing state between pages, such as the persistence of the theme and language chosen by the user. This difficulty was overcome through the use of localStorage, allowing preferences to be saved and automatically applied when loading each page. Another significant challenge was the implementation of the simulator, especially in defining income tax brackets and correctly applying deductions with limits, requiring a logically structured approach in JavaScript.">
+            </p>
+
+            <p data-pt="As soluções adotadas foram progressivamente refinadas ao longo do desenvolvimento e sempre que possível, optei por abordagens reutilizáveis e modulares, facilitando futuras melhorias e garantindo maior robustez da aplicação. "
+               data-en="The solutions adopted were progressively refined throughout development, and whenever possible, I opted for reusable and modular approaches, facilitating future improvements and ensuring greater robustness of the application.">
+            </p>
+        </section>
+
+        <section>
+            <h3 data-pt="Referências" data-en="References">
+                Referências
+            </h3>
+
+            <p>Pereira, A., & Poupa, C. (2017). Linguagens Web (6.ª ed.). Lisboa: Sílabo.</p>
+
+            <p>
+                <a href="https://www.w3schools.com/" target="_blank">
+                   W3Schools - https://www.w3schools.com/
+                </a><br>
+
+                <a href="https://developer.mozilla.org/" target="_blank">
+                   MDN Web Docs - https://developer.mozilla.org/
+                </a><br>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <span data-pt="© 2026 - Guia Simples de IRS"
+                  data-en="© 2026 - Simple IRS Guide">
+            </span>
+        </p>
+    </footer>
+
+</body>
+</html>

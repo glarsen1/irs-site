@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Definição do documento HTML e idioma principal (português) -->
+    <meta charset="UTF-8" />
+    
+    <!-- Configuração da responsividade para adaptação a dispositivos móveis e diferentes ecrãs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Título da página apresentado no separador do navegador -->
+    <title>Prazos IRS - Guia Simples de IRS</title>
+
+    <!-- Ligação ao ficheiro de estilos externo (CSS), assegurando separação entre estrutura e apresentação -->
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    <!-- Ligação ao ficheiro JavaScript externo responsável pelas funcionalidades dinâmicas do site -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho global do site, comum a todas as páginas -->
+    <header class="top-bar">
+        <div class="logo">
+            <!-- Identificação do projeto com suporte a alternância de idioma -->
+            <h1 data-pt="Guia Simples de IRS" data-en="Simple IRS Guide">
+                Guia Simples de IRS
+            </h1>
+        </div>
+
+        <div class="top-buttons">
+            <!-- Botões de interação global: mudança de idioma e tema visual -->
+            <button onclick="toggleLanguage()">PT/EN</button>
+            <button onclick="toggleTheme()">Dia/Noite</button>   
+        </div>
+    </header>
+
+    <!-- Menu de navegação principal do site -->
+    <nav class="menu">
+        <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+        <a href="o-que-e-o-irs.html" data-pt="O que é o IRS" data-en="What is IRS">O que é o IRS</a>
+        <a href="como-preencher.html" data-pt="Como preencher" data-en="How to Fill">Como Preencher</a>
+        <a href="deducoes.html" data-pt="Deduções" data-en="Deductions">Deduções</a>
+        <a href="prazos.html" data-pt="Prazos" data-en="Deadlines">Prazos</a>
+        <a href="simulador.html" data-pt="Simulador" data-en="Calculator">Simulador</a>
+        <a href="about.html" data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+
+    <!-- Área principal de conteúdo da página -->
+    <main class="container">
+
+        <!-- Secção introdutória do tema prazos fiscais -->
+        <section class="intro">
+            <h2 data-pt="Prazos do IRS" data-en="IRS Deadlines">
+                Prazos do IRS
+            </h2>
+
+            <p data-pt="O IRS tem prazos específicos para entrega da declaração e validação de despesas."
+               data-en="IRS has specific deadlines for submission and validation of expenses.">
+                O IRS tem prazos específicos para entrega da declaração e validação de despesas.
+            </p>
+        </section>
+
+        <!-- Secção principal com explicação dos diferentes prazos fiscais -->
+        <section>
+
+            <!-- Prazo relativo à entrega da declaração anual -->
+            <h3 data-pt="Entrega da declaração" data-en="Tax return submission">
+                Entrega da declaração
+            </h3>
+            <p data-pt="Normalmente ocorre entre abril e junho de cada ano."
+               data-en="Usually takes place between April and June each year.">
+                Normalmente ocorre entre abril e junho de cada ano.
+            </p>
+
+            <!-- Prazo relativo à validação de despesas no sistema fiscal -->
+            <h3 data-pt="Validação de despesas" data-en="Expense validation">
+                Validação de despesas
+            </h3>
+            <p data-pt="As despesas devem ser confirmadas no Portal das Finanças até fevereiro."
+               data-en="Expenses must be confirmed on the tax portal by February.">
+                As despesas devem ser confirmadas no Portal das Finanças até fevereiro.
+            </p>
+
+            <!-- Resultado final após processamento da declaração -->
+            <h3 data-pt="Reembolso ou pagamento" data-en="Refund or payment">
+                Reembolso ou pagamento
+            </h3>
+            <p data-pt="Após a entrega da declaração, o cálculo final pode resultar em reembolso ou imposto adicional."
+               data-en="After submission, the final calculation may result in a refund or additional tax.">
+                Após a entrega da declaração, o cálculo final pode resultar em reembolso ou imposto adicional.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé com informação institucional e contador de visitas -->
+    <footer>
+
+        <p>
+            <!-- Informação de copyright e natureza académica do projeto -->
+            <span data-pt="© 2026 - Guia Simples de IRS | Site educativo para fins académicos"
+                  data-en="© 2026 - Simple IRS Guide | Educational website for academic purposes">
+                © 2026 - Guia Simples de IRS | Site educativo para fins académicos
+            </span>
+        </p>
+
+        <p class="disclaimer">
+            <!-- Aviso de caráter não oficial do conteúdo do site -->
+            <span data-pt="Este site é um projecto académico e não substitui informação da Autoridade Tributária."
+                  data-en="This is an academic project and does not replace official tax authority information.">
+                Este site é um projecto académico e não substitui informação da Autoridade Tributária.
+            </span>
+        </p>
+
+        <p class="visit-counter">
+            <!-- Contador de visitas armazenado localmente no navegador -->
+            <span data-pt="Número de visitas:" data-en="Number of visits:">
+                Número de visitas:
+            </span> 
+            <strong id="contadorVisitas">0</strong>
+        </p>
+
+    </footer>
+
+</body>
+</html>

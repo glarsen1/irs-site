@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Definição do tipo de documento HTML e idioma principal da página -->
+    <meta charset="UTF-8" />
+    
+    <!-- Configuração da responsividade para diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Título da página apresentado no separador do navegador -->
+    <title>Deduções IRS - Guia Simples de IRS</title>
+
+    <!-- Ligação ao ficheiro de estilos externo (CSS), assegurando separação entre conteúdo e apresentação -->
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    <!-- Ligação ao ficheiro JavaScript externo responsável pelas funcionalidades dinâmicas -->
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho comum a todas as páginas do site -->
+    <header class="top-bar">
+        <div class="logo">
+            <!-- Identificação do site com suporte a alternância de idioma -->
+            <h1 data-pt="Guia Simples de IRS" data-en="Simple IRS Guide">
+                Guia Simples de IRS
+            </h1>
+        </div>
+
+        <div class="top-buttons">
+            <!-- Botões globais para mudança de idioma e tema visual -->
+            <button onclick="toggleLanguage()">PT/EN</button>
+            <button onclick="toggleTheme()">Dia/Noite</button>   
+        </div>
+    </header>
+
+    <!-- Menu de navegação principal do site -->
+    <nav class="menu">
+        <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+        <a href="o-que-e-o-irs.html" data-pt="O que é o IRS" data-en="What is IRS">O que é o IRS</a>
+        <a href="como-preencher.html" data-pt="Como preencher" data-en="How to Fill">Como Preencher</a>
+        <a href="deducoes.html" data-pt="Deduções" data-en="Deductions">Deduções</a>
+        <a href="prazos.html" data-pt="Prazos" data-en="Deadlines">Prazos</a>
+        <a href="simulador.html" data-pt="Simulador" data-en="Calculator">Simulador</a>
+        <a href="about.html" data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+
+        <!-- Secção introdutória do tema deduções -->
+        <section class="intro">
+            <h2 data-pt="Deduções no IRS" data-en="IRS Deductions">
+                Deduções no IRS
+            </h2>
+
+            <p data-pt="As deduções permitem reduzir o imposto a pagar, através de despesas registadas ao longo do ano."
+               data-en="Deductions reduce the tax to be paid through expenses recorded during the year.">
+                As deduções permitem reduzir o imposto a pagar, através de despesas registadas ao longo do ano.
+            </p>
+        </section>
+
+        <!-- Secção principal com diferentes categorias de deduções fiscais -->
+        <section>
+
+            <!-- Categoria de despesas de saúde -->
+            <h3 data-pt="Despesas de saúde" data-en="Health expenses">
+                Despesas de saúde
+            </h3>
+            <p data-pt="Incluem consultas médicas, medicamentos e exames clínicos."
+               data-en="Include medical appointments, medication and clinical exams.">
+                Incluem consultas médicas, medicamentos e exames clínicos.
+            </p>
+
+            <!-- Categoria de despesas de educação -->
+            <h3 data-pt="Educação" data-en="Education">
+                Educação
+            </h3>
+            <p data-pt="Despesas com escolas, universidades e formação profissional."
+               data-en="Expenses with schools, universities and professional training.">
+                Despesas com escolas, universidades e formação profissional.
+            </p>
+
+            <!-- Categoria de despesas de habitação -->
+            <h3 data-pt="Habitação" data-en="Housing">
+                Habitação
+            </h3>
+            <p data-pt="Inclui rendas e juros de crédito à habitação (quando aplicável)."
+               data-en="Includes rent and mortgage interest (when applicable).">
+                Inclui rendas e juros de crédito à habitação (quando aplicável).
+            </p>
+
+            <!-- Outras despesas gerais dedutíveis -->
+            <h3 data-pt="Outras despesas" data-en="Other expenses">
+                Outras despesas
+            </h3>
+            <p data-pt="Algumas despesas gerais familiares também podem ser consideradas dedutíveis."
+               data-en="Some general family expenses may also be deductible.">
+                Algumas despesas gerais familiares também podem ser consideradas dedutíveis.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé com informação institucional e contador de visitas -->
+    <footer>
+
+        <p>
+            <!-- Informação de copyright e finalidade académica -->
+            <span data-pt="© 2026 - Guia Simples de IRS | Site educativo para fins académicos"
+                  data-en="© 2026 - Simple IRS Guide | Educational website for academic purposes">
+                © 2026 - Guia Simples de IRS | Site educativo para fins académicos
+            </span>
+        </p>
+
+        <p class="disclaimer">
+            <!-- Aviso de carácter académico do projeto -->
+            <span data-pt="Este site é um projecto académico e não substitui informação da Autoridade Tributária."
+                  data-en="This is an academic project and does not replace official tax authority information.">
+                Este site é um projecto académico e não substitui informação da Autoridade Tributária.
+            </span>
+        </p>
+
+        <p class="visit-counter">
+            <!-- Contador de visitas armazenado localmente no navegador -->
+            <span data-pt="Número de visitas:" data-en="Number of visits:">
+                Número de visitas:
+            </span> 
+            <strong id="contadorVisitas">0</strong>
+        </p>
+
+    </footer>
+
+</body>
+</html>

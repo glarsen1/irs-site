@@ -1,0 +1,286 @@
+/*
+   Definição das propriedades base aplicadas a todo o site,
+   incluindo tipografia, margens e esquema de cores inicial.
+*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #1a1a1a;
+}
+
+/*
+   Cabeçalho (top-bar)
+   Estrutura visual do cabeçalho, responsável pela área
+   superior do site com título e botões de interação.
+ */
+
+.top-bar {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilização do título principal do cabeçalho */
+.top-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* 
+   Botões de Interação (idioma e tema)
+   Definição do aspeto visual dos botões globais do sistema.
+ */
+
+.top-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #0055aa;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Efeito visual ao passar o cursor sobre os botões */
+.top-buttons button:hover {
+    background-color: #0077cc;
+}
+
+/* 
+   Menu de navegação
+   Estrutura responsável pela navegação entre páginas do site.
+ */
+
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Links do menu principal */
+.menu a {
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efeito de interação nos links do menu */
+.menu a:hover {
+    background-color: #003366;
+    color: white;
+    border-radius: 4px;
+}
+
+/* 
+   Definição da estrutura geral das páginas e secções.
+ */
+
+.container {
+    padding: 20px;
+}
+
+/* Secção introdutória das páginas */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos títulos introdutórios */
+.intro h2 {
+    color: #003366;
+}
+
+/* 
+   Painel de Navegação (dashboard) 
+   Organização em grelha dos cartões de acesso rápido.
+ */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Cartões de navegação */
+.card {
+    background-color: white;
+    padding: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+/* Efeito de elevação ao passar o cursor */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* Estilo de destaque para cartões selecionados */
+.card.highlight {
+    border: 2px solid #0055aa;
+    background-color: #eaf3ff;
+}
+
+/* Efeito ao clicar no cartão */
+.card:active {
+    border: 2px solid #0055aa;
+    background-color: #eaf3ff;
+    transform: scale(0.98);
+}
+
+/* Títulos dentro dos cartões */
+.card h3 {
+    margin-top: 10px;
+    color: #003366;
+}
+
+/* 
+   Imagem interativa (IRS)
+   Permite interação visual com zoom e efeitos de hover.
+ */
+
+.imagem-irs {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de destaque ao passar o rato */
+.imagem-irs:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Estado de zoom da imagem */
+.imagem-irs.zoom {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+/* 
+   Rodapé
+   Informação institucional e contador de visitas.
+ */
+
+footer {
+    margin-top: 40px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Texto de aviso legal */
+.disclaimer {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Contador de visitas */
+.visit-counter {
+    font-weight: bold;
+}
+
+/* 
+   Responsividade
+   Adaptação do layout a dispositivos móveis.
+ */
+
+@media (max-width: 600px) {
+
+    /* Ajuste do cabeçalho em ecrãs pequenos */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Menu em formato vertical */
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    /* Redução do zoom da imagem em dispositivos móveis */
+    .imagem-irs.zoom {
+        transform: scale(1.2);
+    }
+}
+
+/* 
+   Modo escuro
+   Alteração global do esquema de cores da interface.
+ */
+
+body.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Menu no modo escuro */
+body.dark .menu {
+    background-color: #222;
+}
+
+body.dark .menu a {
+    color: white;
+}
+
+body.dark .menu a:hover {
+    background-color: white;
+    color: #111;
+}
+
+/* Cartões no modo escuro */
+body.dark .card {
+    background-color: #2a2a2a;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Títulos no modo escuro */
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: white;
+}
+
+/* Efeito da imagem no modo escuro */
+body.dark .imagem-irs:hover {
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+/* Botões no modo escuro */
+body.dark .top-buttons button {
+    background-color: #444;
+    color: white;
+}
+
+body.dark .top-buttons button:hover {
+    background-color: #666;
+}
+
+/* Cabeçalho no modo escuro */
+body.dark .top-bar {
+    background-color: #111;
+}
+
+/* Rodapé no modo escuro */
+body.dark footer {
+    background-color: #111;
+}

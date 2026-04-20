@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Definição da codificação de caracteres e configuração de visualização responsiva -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da página apresentado no separador do navegador -->
+    <title>Guia Simples de IRS</title>
+
+    <!-- Ligação ao ficheiro de estilos externo (CSS) responsável pela apresentação visual -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Ligação ao ficheiro JavaScript externo responsável pelo comportamento dinâmico da aplicação -->
+    <script defer src="../js/script.js"></script>
+</head>   
+
+<body>
+
+    <!-- Cabeçalho principal do site contendo o logótipo e controlos de interface -->
+    <header class="top-bar">
+        <div class="logo">
+            <!-- Título principal do site com suporte a tradução dinâmica -->
+            <h1 data-pt="Guia Simples de IRS" data-en="Simple IRS Guide">
+                Guia Simples de IRS
+            </h1>
+        </div>
+
+        <div class="top-buttons">
+            <!-- Botões de controlo para alternância de idioma e tema visual -->
+            <button onclick="toggleLanguage()">PT/EN</button>
+            <button onclick="toggleTheme()">Dia/Noite</button>   
+        </div>
+    </header>  
+
+    <!-- Barra de navegação principal do site -->
+    <nav class="menu">
+        <!-- Estrutura de navegação entre páginas do sistema -->
+        <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+        <a href="o-que-e-o-irs.html" data-pt="O que é o IRS" data-en="What is IRS">O que é o IRS</a>
+        <a href="como-preencher.html" data-pt="Como preencher" data-en="How to Fill">Como Preencher</a>
+        <a href="deducoes.html" data-pt="Deduções" data-en="Deductions">Deduções</a>
+        <a href="prazos.html" data-pt="Prazos" data-en="Deadlines">Prazos</a>
+        <a href="simulador.html" data-pt="Simulador" data-en="Calculator">Simulador</a>
+        <a href="about.html" data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+
+        <!-- Secção introdutória do site -->
+        <section class="intro">
+            <!-- Título de introdução com suporte PT/EN -->
+            <h2 data-pt="Bem-vindo ao Guia do IRS" data-en="Welcome to the IRS Guide">
+                Bem-vindo ao Guia de IRS  
+            </h2>
+
+            <!-- Descrição inicial do objetivo do site -->
+            <p data-pt="Este site ajuda-o a compreender o IRS de forma simples e prática."
+               data-en="This website helps you understand IRS in a simple way.">
+               Este site ajuda-o a compreender o IRS de forma simples e prática.
+            </p>
+        </section>
+
+        <!-- Secção de navegação em formato de cartões (dashboard) -->
+        <section class="dashboard">
+
+            <!-- Cartão de acesso à explicação do IRS -->
+            <a class="card" href="o-que-e-o-irs.html">
+                <h3 data-pt="O que é o IRS" data-en="What is IRS">O que é o IRS</h3>
+                <p data-pt="Explicação simples do imposto" data-en="Simple explanation of tax">
+                    Explicação simples do imposto
+                </p>
+            </a>
+
+            <!-- Cartão de acesso ao guia de preenchimento -->
+            <a class="card" href="como-preencher.html">
+                <h3 data-pt="Como preencher" data-en="How to Fill">Como Preencher</h3>
+                <p data-pt="Passo a passo para preencher" data-en="Step by step guide">
+                    Passo a passo para preencher
+                </p>
+            </a>
+
+            <!-- Cartão de acesso às deduções fiscais -->
+            <a class="card" href="deducoes.html">
+                <h3 data-pt="Deduções" data-en="Deductions">
+                    Deduções
+                </h3>
+                <p data-pt="Despesas que reduzem o imposto" data-en="Expenses that reduce tax">
+                    Despesas que reduzem imposto
+                </p>
+            </a>
+
+            <!-- Cartão de acesso aos prazos fiscais -->
+            <a class="card" href="prazos.html">
+                <h3 data-pt="Prazos" data-en="Deadlines">
+                    Prazos
+                </h3>
+                <p data-pt="Datas importantes do IRS" data-en="Important IRS dates">
+                    Datas importantes do IRS
+                </p>
+            </a>
+
+            <!-- Cartão de acesso ao simulador -->
+            <a class="card" href="simulador.html">
+                <h3 data-pt="Simulador" data-en="Calculator"> 
+                    Simulador
+                </h3>
+                <p data-pt="Simule o seu IRS" data-en="Simulate your IRS">
+                    Simule o seu IRS
+                </p>
+            </a>
+
+        </section>
+    </main>
+
+    <!-- Rodapé do site com informação institucional -->
+    <footer>
+
+        <p>
+            <!-- Informação de direitos de autor e finalidade académica -->
+            <span data-pt="© 2026 - Guia Simples de IRS | Site educativo para fins académicos" 
+                  data-en="© 2026 - Simple IRS Guide |Educational website for academic purposes">
+                  © 2026 - Guia Simples de IRS | Site educativo para fins académicos
+            </span>
+        </p>
+
+        <!-- Aviso de natureza académica do projeto -->
+        <p class="disclaimer">
+            <span data-pt="Este site é um projecto académico e não substitui informação da Autoridade Tributária."
+                  data-en="This is an academic project and does not replace official tax authority information.">
+                  Este site é um projecto académico e não substitui informação da Autoridade Tributária.
+            </span>
+        </p>
+
+        <!-- Contador de visitas local armazenado no navegador -->
+        <p class="visit-counter">
+            <span data-pt="Número de visitas:" data-en="Number of visits:">
+                  Número de visitas:              
+            </span> 
+            <strong id="contadorVisitas">0</strong>
+        </p>
+
+    </footer>
+
+</body>
+</html>
