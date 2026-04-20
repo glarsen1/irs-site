@@ -284,3 +284,11 @@ body.dark .top-bar {
 body.dark footer {
     background-color: #111;
 }
+
+body.about-page {
+    line-height: 1.6;
+}
+
+body.about-page p {
+    line-height: 1.7;
+}
