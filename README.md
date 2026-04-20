@@ -66,11 +66,17 @@ MDN Web Docs - https://developer.mozilla.org/
 irs-site/
 │
 ├── index.html
+    o-que-e-o-irs.hmtl
+    como-preencher.html
+    deducoes.html
+    prazos.html
+    simulador.html
+    about.html
+    README.md
 ├── css/ 
-├── html/
 ├── images/
-├── js/
-└── README.md
+└──  js/
+
 
 
 ---
